@@ -5,14 +5,14 @@ import os
 import pandas as pd
 
 #Lendo o arquivo
-planilha_df = pd.read_csv("XXXXXXXXXXX", sep=';', encoding='utf-8') ##### caminho para o csv
+planilha_df = pd.read_csv("/home/saviocartaxo/Documents/repositorios/GT_RECEITA(Sheet1).csv", sep=';', encoding='utf-8') ##### caminho para o csv
 lista_das_imagens = planilha_df['NOME_IMAGEM']
 
 # Isso serve para que, no final, vc saiba quais os arquivos nao lidos pelo programa
 lista_de_imagens_nao_encontradas = []
 
 # aqui coloca o caminho da pasta que esta o arquivo
-pasta = ##### AQUI COLOCA O CAMINHO PARA A PASTA DE IMAGENS
+pasta = "/home/saviocartaxo/Downloads/pasta_5/IMGS" ##### AQUI COLOCA O CAMINHO PARA A PASTA DE IMAGENS
 arquivo_acessado_atualmente = int(input("Numero do primeiro arquivo que vc ira trabalhar: "))
 arquivo_acessado_atualmente -= 2 
 
