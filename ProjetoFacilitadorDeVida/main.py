@@ -18,6 +18,7 @@ arquivo_acessado_atualmente -= 2
 
 while True:
     # Aqui selecionamos digitamos o nome do documento em si
+    print(arquivo_acessado_atualmente + 2)
     nome_do_arquivo = lista_das_imagens[arquivo_acessado_atualmente]
 
     caminho_para_o_arquivo = os.path.join(pasta, nome_do_arquivo)
@@ -37,7 +38,6 @@ while True:
 
         cv.imshow(nome_do_arquivo, imagem)
         tecla = cv.waitKey(0) & 0xFF
-        cv.destroyAllWindows()
         
         # tecla espaço ou enter fecha a imagem # 13
         if tecla == 13 or tecla == 120:
@@ -59,11 +59,10 @@ while True:
             arquivo_acessado_atualmente -= 2
             break
 
-        print(tecla)
-
         cv.imwrite(caminho_para_o_arquivo, imagem)
     
     if (tecla == 120) : break
+    cv.destroyAllWindows()
     arquivo_acessado_atualmente += 1
 
 # Printa o nome dos arquivos nao encontrados
