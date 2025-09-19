@@ -1,0 +1,12 @@
+
+
+Marcadores:
+    Adicionar
+    Remover
+    Mover 
+    Redimencionar
+
+Salvar dados:
+    label, p1, p2
+
+o label pode ter uma cor associado a ele
