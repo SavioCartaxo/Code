@@ -1,12 +1,40 @@
 
 
 Marcadores:
-    Adicionar
-    Remover
-    Mover 
+    X Adicionar
+    X Remover
+    X Mover 
     Redimencionar
 
 Salvar dados:
     label, p1, p2
 
 o label pode ter uma cor associado a ele
+
+
+Redimencionar
+    X quando apertar nas bordas de um retângulo, quero poder editar ele
+
+    X como identificar essas bordas?
+        para cada ponto, faço uma checagem se o ponto que estou clicando(apenas o primeiro clique do mouse) está entra cada um dos seus pontos
+        + uma margem de pixels, calculado de acordo com a espessura dos pixels do retângulo
+
+    se clicar em uma borda, faz oq?
+        checa de clicou em um vertice, pq o comportamento é diferente
+
+        identifica em qual borda clicou e começa a modificar os pontos do Marcador de forma dinamica
+            * Lembrar de adicionar a margem
+            faz isso checando o X:
+                se o X for igual ao de p1, p3, edita eles
+                se o X for igual ao de p2, p4, edita eles
+
+            faz isso checando o Y:
+                se o Y for igual ao de p1, p4, edita eles
+                se o Y for igual ao de p2, p3, edita eles
+
+Preciso adicionar os Labels 
+Preciso adicionar a funcionalidade de escolher os dados extras que você quer salvar (fazer isso com fronte)
+preciso adicionar o ProjetofacilitadorDeVida
+
+Documentar
+Fazer testes de Unidade

@@ -34,3 +34,17 @@ class Image:
 
     def get_img(self):
         return self.img
+    
+    
+
+
+
+
+
+    def checa_se_clicou_na_borda_do_retangulo(self, ponto_que_clicou, margem):
+        
+        for marc in self.marc_list:
+            if marc.clicou_na_borda_do_marcador(ponto_que_clicou, margem):
+                return True
+        
+        return False
